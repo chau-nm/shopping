@@ -1,0 +1,87 @@
+@import url(./init.css);
+@import url(./_variable.css);
+
+:root {
+  --font-item-width: 320px
+}
+
+.login {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-head {
+  padding: 20px 0;
+}
+
+.login-head h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.login-error {
+  width: var(--font-item-width);
+  background-color: var(--red);
+  padding: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.login-error span {
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+.login-form {
+  width: var(--font-item-width);
+  margin-top: 20px;
+}
+
+.login-form-item {
+  position: relative;
+}
+
+.login-form-item input{
+  width: calc(var(--font-item-width) - 42px);
+  outline: none;
+  border: 1px solid #bbbbbb;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.login-form-item input:hover {
+  outline: none;
+  border: 1px solid #bbbbbb;
+}
+
+.login-form-item .eye {
+  position: absolute;
+  padding: 5px;
+  top: calc(50% - 6px);
+  right: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-form-item .eye:hover {
+  opacity: .8;
+}
+
+.login-form-item input[type="submit"] {
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.login-form-item input[type="submit"]:hover {
+  opacity: .8;
+}
