@@ -1,5 +1,4 @@
 @import url(./init.css);
-@import url(./_variable.css);
 
 :root {
   --font-item-width: 320px
